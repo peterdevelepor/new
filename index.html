@@ -11,18 +11,17 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212; /* Preto de fundo */
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100%;
-            padding: 0;
-            margin: 0;
-        }
+       body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Preto de fundo */
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Flex direction para coluna */
+    justify-content: space-between; /* Garante que o conteúdo fique no topo e o footer no final */
+    height: 100vh; /* 100% da altura da tela */
+    margin: 0;
+    padding: 0;
+}
 
         header {
             background-color: #1e1e1e;
@@ -42,21 +41,20 @@
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
         }
 
-        .container {
-            background-color: #333333;
-            border-radius: 20px;
-            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.6);
-            width: 100%;
-            max-width: 500px;
-            padding: 20px;
-            text-align: center;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            min-height: 300px; /* Garantir altura mínima para o conteúdo */
-        }
-
+       .container {
+    background-color: #333333;
+    border-radius: 20px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1; /* Flex para ocupar o espaço restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 300px; /* Garantir altura mínima para o conteúdo */
+}
         .image-section {
             display: flex;
             justify-content: center;
@@ -130,15 +128,16 @@
             transform: translateY(2px);
         }
 
-        footer {
-            background-color: #1e1e1e;
-            color: #fff;
-            padding: 10px 0;
-            width: 100%;
-            text-align: center;
-            margin-top: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-        }
+      footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
 
         footer p {
             font-size: 14px;
