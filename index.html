@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Joaninha</title>
+    <title>Para o Meu Amor</title>
     <style>
         * {
             margin: 0;
@@ -11,62 +11,63 @@
             box-sizing: border-box;
         }
 
-       body {
+        body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212; /* Preto de fundo */
+    background: linear-gradient(135deg, #ff9a8b, #ffb6a5); /* Gradiente suave, mais quente */
     color: #fff;
     display: flex;
-    flex-direction: column; /* Flex direction para coluna */
-    justify-content: space-between; /* Garante que o conteúdo fique no topo e o footer no final */
-    height: 100vh; /* 100% da altura da tela */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
         header {
-            background-color: #1e1e1e;
-            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px 0;
             width: 100%;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-            margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+            text-transform: uppercase;
         }
 
         header h1 {
-            font-size: 28px;
-            font-weight: 700;
-            color: #ff5c8d;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+            font-size: 40px;
+            letter-spacing: 5px;
+            color: #fff;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
         }
 
-       .container {
-    background-color: #333333;
-    border-radius: 20px;
-    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.6);
-    width: 100%;
-    max-width: 500px;
-    padding: 20px;
-    text-align: center;
-    flex-grow: 1; /* Flex para ocupar o espaço restante */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 300px; /* Garantir altura mínima para o conteúdo */
-}
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 25px;
+            width: 90%;
+            max-width: 600px;
+            padding: 30px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+            margin-top: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-10px);
+        }
+
         .image-section {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 15px;
             margin-bottom: 20px;
+            flex-wrap: wrap;
         }
 
         .image-section img {
             width: 45%;
             height: auto;
             border-radius: 12px;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease;
         }
 
@@ -74,49 +75,38 @@
             transform: scale(1.1);
         }
 
-        .content-section {
-            color: #fff;
-        }
-
         .title {
-            font-size: 36px;
-            color: #ff5c8d;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
+    font-size: 20px; /* Tamanho maior */
+    font-family: 'Arial', sans-serif; /* Fonte mais moderna e elegante */
+    margin-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase;
 
-        .time {
-            font-size: 16px;
-            color: #bbb;
-            margin-bottom: 20px;
-            font-style: italic;
-        }
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Sombra sutil para dar destaque */
+    background: linear-gradient(45deg, #ff5c8d, #ff9a8b); /* Gradiente suave para o texto */
+    -webkit-background-clip: text; /* Clip para o fundo do texto */
+    color: transparent; /* Faz o fundo aparecer apenas dentro do texto */
+}
+
 
         .message {
-            font-size: 16px;
+            font-size: 18px;
             line-height: 1.6;
-            color: #ddd;
+            color: #f0f0f0;
             font-weight: 300;
             letter-spacing: 0.5px;
-            margin-bottom: 20px;
-        }
-
-        .heart {
-            color: #ff5c8d;
-            font-size: 30px;
+            margin-bottom: 30px;
         }
 
         .button {
             background-color: #ff5c8d;
             color: #fff;
-            padding: 10px 25px;
+            padding: 15px 40px;
             font-size: 18px;
             border: none;
-            border-radius: 30px;
+            border-radius: 50px;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.3s ease;
-            margin-top: 15px;
         }
 
         .button:hover {
@@ -128,16 +118,15 @@
             transform: translateY(2px);
         }
 
-      footer {
-    background-color: #1e1e1e;
-    color: #fff;
-    padding: 10px 0;
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    position: relative;
-}
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 15px 0;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            margin-top: 30px;
+        }
 
         footer p {
             font-size: 14px;
@@ -147,28 +136,28 @@
         /* Ajustes para telas menores */
         @media screen and (max-width: 600px) {
             header h1 {
-                font-size: 24px;
+                font-size: 30px;
             }
 
             .container {
-                padding: 15px;
+                padding: 20px;
             }
 
             .image-section img {
-                width: 40%;
+                width: 90%;
             }
 
             .title {
-                font-size: 28px;
+                font-size: 30px;
             }
 
             .message {
-                font-size: 14px;
-                margin-bottom: 15px;
+                font-size: 16px;
+                margin-bottom: 20px;
             }
 
             .button {
-                padding: 8px 20px;
+                padding: 12px 30px;
                 font-size: 16px;
             }
 
@@ -176,30 +165,28 @@
                 font-size: 12px;
             }
         }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>Meu Amor</h1>
+        <h1>Para o Meu Amor</h1>
     </header>
-    
+
     <div class="container">
         <div class="image-section">
             <img src="joana.jpg" alt="Foto do casal 1">
             <img src="joana1.JPG" alt="Foto do casal 2">
         </div>
-    
-            <div class="time">Sempre ao teu lado❤</div>
-            <div class="message">
-                Queria só te lembrar o quanto tens sido importante pra mim. Cada dia ao teu lado é um presente que eu jamais imaginei ter. Fazes me sentir uma paz que eu nunca conheci. Estar contigo tem sido tudo para mim.  Te amo mais do que o universo consegue conter ❤
-            </div>
-            <button class="button" onclick="alert('Amo te Muito ❤')">aqui</button>
+
+        <div class="title">Sempre Ao Teu Lado</div>
+        <div class="message">
+            ueria só te lembrar o quanto tens sido importante pra mim. Cada dia ao teu lado é um presente que eu jamais imaginei ter. Fazes me sentir uma paz que eu nunca conheci. Estar contigo tem sido tudo para mim.  Te amo mais do que o universo consegue conter ❤
         </div>
+        <button class="button" onclick="alert('Amo-te muito! ❤')">Clica Aqui</button>
     </div>
 
     <footer>
-        <p>&copy; Sempre ao teu lado amor.</p>
+        <p>&copy; 2025 Sempre ao teu lado, meu amor.</p>
     </footer>
 </body>
 </html>
