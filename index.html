@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MInha Joaninha</title>
+    <title>Minha Joaninha</title>
     <style>
         * {
             margin: 0;
@@ -26,18 +26,18 @@
 
         header {
             background-color: #1e1e1e;
-            padding: 15px 0;
+            padding: 10px 0;
             width: 100%;
             text-align: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-            margin-bottom: 20px; /* Ajuste de margem para não sobrepor o conteúdo */
+            margin-bottom: 15px;
         }
 
         header h1 {
-            font-size: 36px;
+            font-size: 28px;
             font-weight: 700;
             color: #ff5c8d;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             text-transform: uppercase;
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
         }
@@ -47,8 +47,8 @@
             border-radius: 20px;
             box-shadow: 0 10px 50px rgba(0, 0, 0, 0.6);
             width: 100%;
-            max-width: 600px;
-            padding: 40px;
+            max-width: 500px;
+            padding: 20px;
             text-align: center;
             flex-grow: 1;
             display: flex;
@@ -60,8 +60,8 @@
         .image-section {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-bottom: 30px;
+            gap: 10px;
+            margin-bottom: 20px;
         }
 
         .image-section img {
@@ -81,44 +81,44 @@
         }
 
         .title {
-            font-size: 50px;
+            font-size: 36px;
             color: #ff5c8d;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             text-transform: uppercase;
             letter-spacing: 3px;
         }
 
         .time {
-            font-size: 18px;
+            font-size: 16px;
             color: #bbb;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             font-style: italic;
         }
 
         .message {
-            font-size: 18px;
-            line-height: 1.8;
+            font-size: 16px;
+            line-height: 1.6;
             color: #ddd;
             font-weight: 300;
             letter-spacing: 0.5px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .heart {
             color: #ff5c8d;
-            font-size: 40px;
+            font-size: 30px;
         }
 
         .button {
             background-color: #ff5c8d;
             color: #fff;
-            padding: 12px 30px;
-            font-size: 22px;
+            padding: 10px 25px;
+            font-size: 18px;
             border: none;
             border-radius: 30px;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.3s ease;
-            margin-top: 20px;
+            margin-top: 15px;
         }
 
         .button:hover {
@@ -133,22 +133,56 @@
         footer {
             background-color: #1e1e1e;
             color: #fff;
-            padding: 15px 0;
+            padding: 10px 0;
             width: 100%;
             text-align: center;
-            margin-top: 20px; /* Ajuste para garantir que o footer fique visível */
+            margin-top: 20px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         footer p {
-            font-size: 16px;
+            font-size: 14px;
             color: #bbb;
         }
+
+        /* Ajustes para telas menores */
+        @media screen and (max-width: 600px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .image-section img {
+                width: 40%;
+            }
+
+            .title {
+                font-size: 28px;
+            }
+
+            .message {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+
+            .button {
+                padding: 8px 20px;
+                font-size: 16px;
+            }
+
+            footer p {
+                font-size: 12px;
+            }
+        }
+
     </style>
 </head>
 <body>
     <header>
-        <h1> Meu Amor </h1>
+        <h1>Meu Amor</h1>
     </header>
     
     <div class="container">
@@ -159,14 +193,14 @@
     
             <div class="time">Sempre ao teu lado❤</div>
             <div class="message">
-                Queria só te lembrar o quanto tens sido importante pra mim. Cada dia ao teu lado é um presente que eu jamais imaginei ter. Fazes me sentir uma paz que eu nunca conheci. Estar contigo tem sido tudo para mim. Te amo muito! ❤
+                Quero aproveitar este momento para te lembrar do quão fundamental és na minha vida. O teu amor trouxe uma paz para o meu coração que eu nem sabia que existiam, e, ao teu lado, descobri a verdadeira essência da felicidade. Fazes o tempo parar quando estamos juntos, e em cada olhar, em cada gesto, encontro um mundo inteiro que só faz sentido ao teu lado. O que sinto por ti é algo que escapa a qualquer tentativa de descrição, porque o amor que compartilho contigo vai além das palavras, é uma força silenciosa e infinita que me faz querer ser uma pessoa melhor a cada dia. Te amo mais do que o universo consegue conter ❤
             </div>
             <button class="button" onclick="alert('Amo te Muito ❤')">aqui</button>
         </div>
     </div>
 
     <footer>
-        <p>&copy; Sempre ao teu lado, meu amor.</p>
+        <p>&copy; Sempre ao teu lado amor.</p>
     </footer>
 </body>
 </html>
